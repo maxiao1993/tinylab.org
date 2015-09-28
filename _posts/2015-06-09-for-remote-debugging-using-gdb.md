@@ -7,8 +7,9 @@ tags:
   - 远程调试
   - gdb
   - gdbserver
-categories:
   - Linux
+categories:
+  - 调试工具
 ---
 
 > By Falcon of [TinyLab.org][1]

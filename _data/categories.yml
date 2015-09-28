@@ -80,7 +80,7 @@
         - name: 多媒体管理
         - name: 电源管理
           categorires:
-            - name: STR/STD
+            - name: System Suspend
             - name: CPUIdle
             - name: DVFS
             - name: Regulator
@@ -144,6 +144,7 @@
         - name: Android Studio
         - name: Android SDK
         - name: Android NDK
+        - name: Android 工具
     - name: Android 模拟器
       categories:
         - name: Goldfish
@@ -168,7 +169,7 @@
         - name: Android 传感器
         - name: Android Recovery
         - name: Android 安全服务
-    - name: Android 软件
+    - name: Android 软件开发
     - name: Android 产品
     - name: Android 社区
 
@@ -182,6 +183,11 @@
     - name: 实时性
     - name: 功耗优化
     - name: 系统安全
+    - name: 资源利用率
+      categories:
+        - name: 虚拟化
+          categories:
+            - name: Docker
 
 - name: 技术漫谈
   categories:
@@ -193,12 +199,13 @@
     - name: 自动构建
     - name: 调试技巧
     - name: 产品测试
+    - name: 效率工具
 
-- name: 行业思考
+- name: 行业观察
   categories:
-    - name: 开源文化
-    - name: 技术热点
-    - name: 行业观察
+    - name: 开源社区
+    - name: 技术动态
+    - name: 行业动向
     - name: 产品创意
     - name: 研发管理
     - name: 质量保障

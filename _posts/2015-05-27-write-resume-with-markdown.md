@@ -9,8 +9,7 @@ tags:
   - Markdown
   - Resume
 categories:
-  - Markdown
-  - Tools
+  - 效率工具
 ---
 
 > by Falcon of [TinyLab.org][1]

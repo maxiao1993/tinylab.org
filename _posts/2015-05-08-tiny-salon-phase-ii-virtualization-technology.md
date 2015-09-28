@@ -2,17 +2,15 @@
 title: 泰晓沙龙 第二期：Linux 虚拟化技术
 author: Wu Zhangjin
 layout: post
+group: activity
 permalink: /tiny-salon-phase-ii-virtualization-technology/
 tags:
   - Cgroup
   - Docker
-  - 虚拟化
   - Namespace
   - 泰晓沙龙
 categories:
-  - Linux
-  - Salon
-  - Virtualization
+  - 虚拟化
 ---
 
 > by [泰晓科技][1]

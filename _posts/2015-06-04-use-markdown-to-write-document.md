@@ -8,8 +8,7 @@ tags:
   - Markdown
   - 文档
 categories:
-  - Markdown
-  - Tools
+  - 效率工具
 ---
 
 > by Falcon of [TinyLab.org][1]

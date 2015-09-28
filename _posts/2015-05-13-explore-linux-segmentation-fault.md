@@ -9,9 +9,10 @@ tags:
   - coredump
   - Segmentation Fault
   - 段错误
-categories:
-  - Debug, Trace and Profile
   - Linux
+categories:
+  - 调试技巧
+  - 稳定性
 ---
 
 > By Falcon of [TinyLab.org][1]

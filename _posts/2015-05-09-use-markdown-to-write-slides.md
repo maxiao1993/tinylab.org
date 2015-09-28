@@ -8,8 +8,7 @@ tags:
   - Slides
   - 幻灯
 categories:
-  - Markdown
-  - Tools
+  - 效率工具
 ---
 
 > By Falcon of [TinyLab.org][1]

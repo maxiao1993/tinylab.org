@@ -8,7 +8,9 @@ tags:
   - SysTrace
   - 应用启动速度优化
 categories:
-  - Android
+  - 启动速度
+  - Android 工具
+  - 调试工具
 ---
 
 > By Gracker of [TinyLab.org][1]

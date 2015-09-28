@@ -8,7 +8,8 @@ tags:
   - Kexec
   - Linux
 categories:
-  - Linux
+  - 效率工具
+  - 启动速度
 ---
 
 > By Falcon of [TinyLab.org][1]

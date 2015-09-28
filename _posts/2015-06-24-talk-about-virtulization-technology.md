@@ -7,8 +7,7 @@ tags:
   - 虚拟化
   - Linux
 categories:
-  - Linux
-  - Virtualization
+  - 虚拟化
 ---
 
 > By Falcon of [TinyLab.org][1]
