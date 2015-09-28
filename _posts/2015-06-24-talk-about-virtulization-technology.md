@@ -4,7 +4,6 @@ author: Wu Zhangjin
 layout: post
 permalink: /talk-about-virtulization-technology/
 tags:
-  - 虚拟化
   - Linux
 categories:
   - 虚拟化

@@ -10,8 +10,7 @@ tags:
   - GTK+
   - meego
 categories:
-  - Linux
-  - Mobile
+  - 技术动态
 ---
 
 <!-- title: Clutter：UI 得瑟起来～～ -->

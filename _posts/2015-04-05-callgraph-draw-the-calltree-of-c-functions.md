@@ -12,9 +12,8 @@ tags:
   - tree2dotx
 categories:
   - C
-  - callgraph
-  - Linux
-  - Tools
+  - 源码分析
+  - 效率工具
 ---
 
 <!-- Title: Callgraph: Draw the calltree of the C functions -- Static Analysis (part1) -->

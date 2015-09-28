@@ -10,9 +10,10 @@ tags:
   - vnstatSVG
   - Web
   - 前端
+  - 流量监控
 categories:
-  - Tools
-  - vnstatSVG
+  - 开源项目
+  - 构建 Linux 服务
 ---
 
 > by Falcon of [TinyLab.org][1]

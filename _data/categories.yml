@@ -112,6 +112,7 @@
         - name: MIPS
         - name: X86
         - name: PowerPC
+        - name: Tegra
     - name: 开发板
       categories:
         - name: 树莓派

@@ -11,7 +11,8 @@ tags:
   - Valgrind
 categories:
   - C
-  - callgraph
+  - 源码分析
+  - 效率工具
 ---
 
 > By Falcon of [TinyLab.org][1]

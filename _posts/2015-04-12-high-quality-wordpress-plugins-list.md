@@ -8,7 +8,7 @@ tags:
   - Plugin
   - Wordpres
 categories:
-  - WordPress
+  - Web 建站
 ---
 
 > by Falcon of [TinyLab.org][1]

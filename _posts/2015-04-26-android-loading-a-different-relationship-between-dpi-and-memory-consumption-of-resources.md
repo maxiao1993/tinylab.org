@@ -9,7 +9,7 @@ tags:
   - Memory
   - 内存
 categories:
-  - Android
+  - 性能优化
 ---
 
 <!-- 链接：原创空间 -->

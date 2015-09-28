@@ -18,7 +18,7 @@ tags:
   - 插件
   - 保存为
 categories:
-  - WordPress
+  - Web 建站
 ---
 
 > by Falcon of [TinyLab.org][1]

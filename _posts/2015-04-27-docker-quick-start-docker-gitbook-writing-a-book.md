@@ -4,13 +4,14 @@ author: Wu Zhangjin
 layout: post
 permalink: /docker-quick-start-docker-gitbook-writing-a-book/
 tags:
-  - Docker
-  - gitbook
+  - Gitbook
   - Markdown
   - 写作
   - 书籍
 categories:
-  - Virtualization
+  - Docker
+  - 效率工具
+  - 开源书籍
 ---
 
 > By Falcon of [TinyLab.org][1]

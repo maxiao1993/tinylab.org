@@ -4,7 +4,6 @@ author: Wu Zhangjin
 layout: post
 permalink: /source-code-analysis-dynamic-analysis-of-linux-kernel-function-calls/
 tags:
-  - C语言
   - FlameGraph
   - Ftrace
   - Perf
@@ -12,7 +11,8 @@ tags:
   - 源码分析
 categories:
   - C
-  - Linux
+  - 源码分析 
+  - 效率工具
 ---
 
 > By Falcon of [TinyLab.org][1]
