@@ -23,7 +23,7 @@
       {% assign more = "" %}
       {% if size %}
         {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
-        {% capture size %} <sup>({{size}})</sup>{% endcapture %}
+        {% capture size %} <mark>({{size}})</mark>{% endcapture %}
         {% capture more %}href="{{ site.JB.categories_path | append:'#' | append:name | replace:" ","-" }}-ref" {{ not_empty }}{% endcapture %}
       {%endif%}
       <a {{ more }}  title="{{ name }}">{{ name }}{{ size }}</a>
@@ -46,7 +46,7 @@
              {% assign more = "" %}
              {% if size %}
                {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
-               {% capture size %} <sup>({{size}})</sup>{% endcapture %}
+               {% capture size %} <mark>({{size}})</mark>{% endcapture %}
                {% capture more %}href="{{ site.JB.categories_path | append:'#' | append:name | replace:" ","-" }}-ref" {{ not_empty }} {% endcapture %}
              {%endif%}
 
@@ -70,7 +70,7 @@
                  {% assign more = "" %}
                  {% if size %}
                    {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
-                   {% capture size %} <sup>({{size}})</sup>{% endcapture %}
+                   {% capture size %} <mark>({{size}})</mark>{% endcapture %}
                    {% capture more %}href="{{ site.JB.categories_path | append:'#' | append:name | replace:" ","-" }}-ref" {{ not_empty }} {% endcapture %}
                  {%endif%}
 
@@ -86,7 +86,7 @@
                     {% assign more = "" %}
                     {% if size %}
                       {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
-                      {% capture size %} <sup>({{size}})</sup>{% endcapture %}
+                      {% capture size %} <mark>({{size}})</mark>{% endcapture %}
                       {% capture more %}href="{{ site.JB.categories_path | append:'#' | append:name | replace:" ","-" }}-ref" {{ not_empty }} {% endcapture %}
                     {%endif%}
 
@@ -130,7 +130,7 @@
           {% assign size = category[1].size %}
           {% assign more = "" %}
           {% if size %}
-            {% capture size %} <sup>({{size}})</sup>{% endcapture %}
+            {% capture size %} <mark>({{size}})</mark>{% endcapture %}
             {% capture more %}href="{{ site.JB.categories_path | append:'#' | append:name | replace:" ","-" }}-ref" {{ not_empty }} {% endcapture %}
           {%endif%}
 
