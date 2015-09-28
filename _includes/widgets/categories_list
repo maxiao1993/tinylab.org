@@ -19,7 +19,8 @@
       {% endif %}
 
       {% assign name = category.name %}
-      {% assign size = site.categories[name].size %}
+      {% assign downcase_name = name | downcase %}
+      {% assign size = site.categories[downcase_name].size %}
       {% assign more = "" %}
       {% if size %}
         {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
@@ -42,7 +43,8 @@
              {% endif %}
 
              {% assign name = child.name %}
-             {% assign size = site.categories[name].size %}
+             {% assign downcase_name = name | downcase %}
+             {% assign size = site.categories[downcase_name].size %}
              {% assign more = "" %}
              {% if size %}
                {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
@@ -66,7 +68,8 @@
                  {% endif %}
 
                  {% assign name = g.name %}
-                 {% assign size = site.categories[name].size %}
+                 {% assign downcase_name = name | downcase %}
+                 {% assign size = site.categories[downcase_name].size %}
                  {% assign more = "" %}
                  {% if size %}
                    {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
@@ -82,7 +85,8 @@
                   {% for gg in g.categories %}
 
                     {% assign name = gg.name %}
-                    {% assign size = site.categories[name].size %}
+                    {% assign downcase_name = name | downcase %}
+                    {% assign size = site.categories[downcase_name].size %}
                     {% assign more = "" %}
                     {% if size %}
                       {% assign p_ctg_list = p_ctg_list | append:"," | append:name %}
@@ -116,7 +120,7 @@
    </li>
    <ul id="{{ ctg_id }}-cld" class="nav">
 
-    {% assign p_ctg_list = p_ctg_list | plit:"," %}
+    {% assign p_ctg_list = p_ctg_list | downcase | plit:"," %}
 
     {% for category in site.categories %}
       {% assign name = category[0] %}
