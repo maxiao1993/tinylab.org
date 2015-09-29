@@ -16,7 +16,7 @@ tags:
   - Stability
   - Test automation
 categories:
-  - 系统优化
+  - 综合优化
 ---
 
 > by falcon of TinyLab.org

@@ -15,7 +15,7 @@ tags:
   - Stability
 categories:
   - 技术动态
-  - 系统优化
+  - 综合优化
 ---
 
 > By Falcon of [TinyLab.org][1]
