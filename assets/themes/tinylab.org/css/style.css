@@ -561,7 +561,8 @@ article header time {
     float: right;
     color: #6a8;
     padding: 2px;
-    border: 1px dotted #eee
+    border: 1px dotted #eee;
+    border-radius: 3px;
 }
 
 article header span a:hover {
