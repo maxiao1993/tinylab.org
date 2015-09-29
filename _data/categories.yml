@@ -114,7 +114,7 @@
 
 - name: Linux 开发
   categories:
-    - name: 硬件体系架构
+    - name: 硬件架构
       categories:
         - name: CPU
           categories:
@@ -127,7 +127,7 @@
           categories:
             - name: Mali
             - name: PowerVR
-    - name: 软件体系架构
+    - name: 软件架构
       categories:
         - name: Graphic
           categories:
