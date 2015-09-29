@@ -559,10 +559,12 @@ article header time {
     font-size: 80%;
     margin-top: -4.5em;
     float: right;
-    color: #6a8;
-    padding: 2px;
-    border: 1px dotted #eee;
-    border-radius: 3px;
+
+    padding: 3px;
+    border: 1px dotted #dcdee0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 article header span a:hover {
