@@ -8,7 +8,7 @@ tags:
   - Shell 编程范例
   - 嵌入式 Linux 知识库
 categories:
-  - 开放书籍
+  - 开源书籍
 ---
 
 > by Falcon of [TinyLab.org][1]

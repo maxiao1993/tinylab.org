@@ -10,7 +10,7 @@ tags:
   - Linux
   - 嵌入式
 categories:
-  - 开放书籍
+  - 开源书籍
 ---
 
 > By Falcon of [TinyLab.org][1]

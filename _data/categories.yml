@@ -169,6 +169,7 @@
             - name: Valgrind
             - name: Objdump
             - name: addr2line
+            - name: catchsegv
             - name: hexdump
             - name: strace
             - name: ltrace
@@ -263,6 +264,7 @@
     - name: Android 应用
       categories:
         - name: Google Play
+        - name: 包管理
     - name: Android 产品
     - name: Android 社区
 

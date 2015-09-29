@@ -8,7 +8,7 @@ tags:
   - original-package
   - PackageManagerService
 categories:
-  - Android 软件开发
+  - 包管理
 ---
 
 <!-- 链接：原创空间 -->
