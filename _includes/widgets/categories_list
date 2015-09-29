@@ -133,7 +133,7 @@
 
    <!-- 其他分类 -->
    {% assign name = "未经分类" %}
-   {% assign ctg_id = "ctg-xxxx" %}
+   {% assign ctg_id = "ctg-1000" %}
    {% assign more = "" %}
    <li id="{{ ctg_id }}">
       <i class="icon-fixed-width icon-{{ icon_close }}" onclick="click_toc('#{{ ctg_id }}', '{{ icon_open }}', '{{ icon_close }}')"></i>
