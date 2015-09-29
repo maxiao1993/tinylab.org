@@ -279,6 +279,7 @@
     - name: 虚拟化
       categories:
         - name: Docker
+    - name: 综合优化
 
 - name: 技术漫谈
   categories:
