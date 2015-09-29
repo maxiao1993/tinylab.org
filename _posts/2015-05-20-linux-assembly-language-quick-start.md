@@ -13,6 +13,7 @@ categories:
   - MIPS
   - PowerPC
   - X86
+  - Qemu
 ---
 
 > By Falcon of [TinyLab.org][1]
