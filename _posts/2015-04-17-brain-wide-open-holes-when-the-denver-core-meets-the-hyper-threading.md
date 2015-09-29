@@ -16,7 +16,7 @@ tags:
   - 丹佛
   - ISA
 categories:
-  - Tegra
+  - Denver
   - 技术动向
 ---
 

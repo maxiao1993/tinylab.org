@@ -4,13 +4,13 @@ author: Chen Jie
 layout: post
 permalink: /clutter-let-ui-be-higher/
 tags:
-  - Clutter
   - GNOME
   - GSK
   - GTK+
   - meego
 categories:
   - 技术动态
+  - Clutter
 ---
 
 <!-- title: Clutter：UI 得瑟起来～～ -->

@@ -8,7 +8,7 @@ tags:
   - Kexec
   - Linux
 categories:
-  - 效率工具
+  - Kexec
   - 启动速度
 ---
 

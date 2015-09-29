@@ -2,15 +2,16 @@
 title: Docker 快速上手：用 Docker + GitBook 写书
 author: Wu Zhangjin
 layout: post
+album: Markdown 用法详解
 permalink: /docker-quick-start-docker-gitbook-writing-a-book/
 tags:
   - Gitbook
-  - Markdown
   - 写作
   - 书籍
+  - 泰晓沙龙
 categories:
   - Docker
-  - 效率工具
+  - Markdown
   - 开源书籍
 ---
 

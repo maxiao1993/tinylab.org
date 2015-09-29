@@ -2,6 +2,7 @@
 title: 用 Markdown 制作简历
 author: Wu Zhangjin
 layout: post
+album: Markdown 用法详解
 permalink: /write-resume-with-markdown/
 tags:
   - 简历
@@ -9,7 +10,7 @@ tags:
   - Markdown
   - Resume
 categories:
-  - 效率工具
+  - Markdown
 ---
 
 > by Falcon of [TinyLab.org][1]

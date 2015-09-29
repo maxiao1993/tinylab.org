@@ -23,7 +23,7 @@ tags:
   - 智能真8核
   - 云盘
 categories:
-  - Mobile
+  - 行业动态
 ---
 
 > by [泰晓科技][1] 主编

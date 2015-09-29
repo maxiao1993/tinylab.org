@@ -11,7 +11,7 @@ tags:
   - JDB
   - JDWP
 categories:
-  - Android 工具
+  - JDB
 ---
 
 <!-- Title: Use JDB to debug Android Application -->

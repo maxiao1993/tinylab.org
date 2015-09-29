@@ -2,6 +2,7 @@
 title: 源码分析：静态分析 C 程序函数调用关系图
 author: Wu Zhangjin
 layout: post
+album: 源码分析之道
 permalink: /callgraph-draw-the-calltree-of-c-functions/
 tags:
   - Callgraph
@@ -13,7 +14,6 @@ tags:
 categories:
   - C
   - 源码分析
-  - 效率工具
 ---
 
 <!-- Title: Callgraph: Draw the calltree of the C functions -- Static Analysis (part1) -->

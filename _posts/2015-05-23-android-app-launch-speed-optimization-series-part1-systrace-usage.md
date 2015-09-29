@@ -5,12 +5,10 @@ layout: post
 permalink: /android-app-launch-speed-optimization-series-part1-systrace-usage/
 tags:
   - Android
-  - SysTrace
   - 应用启动速度优化
 categories:
   - 启动速度
-  - Android 工具
-  - 调试工具
+  - Systrace
 ---
 
 > By Gracker of [TinyLab.org][1]

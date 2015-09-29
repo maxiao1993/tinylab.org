@@ -16,9 +16,8 @@ tags:
   - 导出
   - 打印支持
   - 插件
-  - 保存为
 categories:
-  - Web 建站
+  - Wordpress
 ---
 
 > by Falcon of [TinyLab.org][1]

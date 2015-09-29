@@ -2,6 +2,7 @@
 title: 源码分析：函数调用关系绘制方法与逆向建模
 author: Wu Zhangjin
 layout: post
+album: 源码分析之道
 permalink: /source-code-analysis-how-best-to-draw-a-function-call/
 tags:
   - c
@@ -19,7 +20,6 @@ tags:
 categories:
   - C
   - 源码分析
-  - 效率工具
 ---
 
 <!-- Title: 源码分析：如何更好地展示函数调用关系/流程图

@@ -49,8 +49,9 @@
 
 - name: 操作系统
   categories:
+    - name: OS X
     - name: Linux 0.11
-    - name: Linux 内核分析
+    - name: Linux 内核
       categories:
         - name: 启动管理
         - name: 时钟系统
@@ -75,7 +76,6 @@
             - name: 数据同步
         - name: 系统调用
         - name: 程序执行
-        - name: 模块与热插拔
         - name: 网络管理
         - name: 多媒体管理
         - name: 电源管理
@@ -93,26 +93,49 @@
         - name: 内核函数库
         - name: 内核调试与跟踪
         - name: 内核配置与编译
-
-    - name: Linux 设备驱动
+        - name: 其他特性
+          categories:
+            - name: Kexec
+        - name: 设备驱动
+          categories:
+            - name: I/O 体系结构
+            - name: 设备驱动模型
+            - name: 字符设备
+            - name: 块设备
+            - name: 资源分配
+            - name: 总线系统
+            - name: 设备树
+    - name: 发行版
       categories:
-        - name: I/O 体系结构
-        - name: 设备驱动模型
-        - name: 字符设备
-        - name: 块设备
-        - name: 资源分配
-        - name: 总线系统
-        - name: 设备树
+        - name: Ubuntu
 
 - name: 嵌入式 Linux 开发
   categories:
-    - name: 体系架构
+    - name: 硬件体系架构
       categories:
-        - name: ARM
-        - name: MIPS
-        - name: X86
-        - name: PowerPC
-        - name: Tegra
+        - name: CPU
+          categories:
+            - name: ARM
+            - name: MIPS
+            - name: X86
+            - name: PowerPC
+            - name: Denver
+        - name: GPU
+          categories:
+            - name: Mali
+            - name: PowerVR
+    - name: 软件体系架构
+      categories:
+        - name: Graphic
+          categories:
+            - name: OpenGL
+            - name: Vulkan
+        - name: UI
+          categories:
+            - name: Clutter
+        - name: Multimedia
+          categories:
+            - name: GStreamer
     - name: 开发板
       categories:
         - name: 树莓派
@@ -122,8 +145,23 @@
     - name: 开发环境
       categories:
         - name: 开发工具
+          categories:
+            - name: Busybox
+            - name: Buildroot
         - name: 编译环境
-        - name: 调试工具
+          categories:
+            - name: Gcc
+            - name: 交叉编译
+        - name: 调试和优化
+          categories:
+            - name: GDB
+            - name: KGDB
+            - name: Ftrace
+            - name: Perf
+            - name: Gprof
+            - name: Valgrind
+            - name: Objdump
+            - name: addr2line
     - name: 引导与启动
       categories:
         - name: Bootloaders
@@ -135,17 +173,52 @@
     - name: 移植 Linux 系统
       categories:
         - name: 移植 Linux 内核
+        - name: 调试设备驱动
+          categories:
+            - name: I2C 驱动
+            - name: GPIO 驱动
+            - name: PMIC 驱动
+            - name: LCD/OLED 驱动
+            - name: LED 驱动
+            - name: EMMC 驱动
+            - name: GPU 驱动
+            - name: UFS 驱动
+            - name: Video 驱动
+            - name: Camera 驱动
+            - name: Audio 驱动
+            - name: Modem 驱动
+            - name: WIFI 驱动
+            - name: GPS 驱动
+            - name: Bluetooth 驱动
+            - name: NFC 驱动
+            - name: TP 驱动
+            - name: 指纹 驱动
+            - name: USB 驱动
+            - name: 充电 驱动
+            - name: 传感器 驱动
+            - name: Keys 驱动
+            - name: RTC 驱动
+            - name: Watchdog 驱动
+            - name: 霍尔器件 驱动
         - name: 构建 Linux 服务
+          categories:
+            - name: 流量监控
         - name: 开发 Linux 应用
 
 - name: Android 开发
   categories:
-    - name: Android 入门
-      categories:
-        - name: Android Studio
-        - name: Android SDK
-        - name: Android NDK
-        - name: Android 工具
+     - name: Android 基础
+        - name: Android 开发环境
+          categories:
+            - name: Android SDK
+            - name: Android NDK
+            - name: Android Studio
+        - name: Android 开发工具
+          categories:
+            - name: Systrace
+            - name: JDB
+            - name: ADB
+            - name: Busybox
     - name: Android 模拟器
       categories:
         - name: Goldfish
@@ -159,7 +232,7 @@
         - name: Pstore ramoops
         - name: Android Logger
         - name: Android USB Gadgets
-        - name: Goldfish 内核
+        - name: Goldfish 内核驱动
     - name: Android 系统
       categories:
         - name: Android 电源管理
@@ -168,9 +241,12 @@
         - name: Android 时钟服务
         - name: Android 无线与通信
         - name: Android 传感器
+        - name: Android 触摸屏
         - name: Android Recovery
         - name: Android 安全服务
-    - name: Android 软件开发
+    - name: Android 应用
+      categories:
+        - name: Google Play
     - name: Android 产品
     - name: Android 社区
 
@@ -192,15 +268,27 @@
 
 - name: 技术漫谈
   categories:
+    - name: 代码编辑
+      categories:
+        - name: Vim
     - name: 编码风格
     - name: 设计规范
+      categories:
+        - name: UML
     - name: 变更管理
+      categories:
+        - name: Git
+        - name: SVN
     - name: 源码分析
     - name: 代码评审
     - name: 自动构建
     - name: 调试技巧
     - name: 产品测试
     - name: 效率工具
+      categories:
+        - name: Markdown
+        - name: Gitbook
+        - name: FlameGraph
 
 - name: 行业观察
   categories:
@@ -208,10 +296,14 @@
     - name: 技术动态
     - name: 行业动向
     - name: 产品创意
+    - name: 产品评测
     - name: 研发管理
     - name: 质量保障
 
-- name: 工程实践
+- name: 项目实践
   categories:
     - name: 开源项目
     - name: 开放书籍
+
+- name: 技术交流
+    - name: 泰晓沙龙

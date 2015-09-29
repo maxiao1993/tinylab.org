@@ -12,6 +12,7 @@ tags:
   - Linux
 categories:
   - 调试技巧
+  - 调试工具
   - 稳定性
 ---
 

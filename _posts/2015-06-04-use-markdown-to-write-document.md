@@ -2,13 +2,13 @@
 title: 用 Markdown 写文档
 author: Wu Zhangjin
 layout: post
+album: Markdown 用法详解
 permalink: /use-markdown-to-write-document/
 tags:
   - Article
-  - Markdown
   - 文档
 categories:
-  - 效率工具
+  - Markdown
 ---
 
 > by Falcon of [TinyLab.org][1]
