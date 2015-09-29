@@ -35,7 +35,7 @@
         {% assign not_empty = "class='not_empty'" %}
       {%endif%}
       {% if size or categories_path == "" %}
-        {% capture more %}href="{{ categories_path | append:'#' | append:name | replace:" ","-" | replace:"/","-" }}-ref" {{ not_empty }}{% endcapture %}
+        {% capture more %}href="{{ name | replace:" ","-" | replace:"/","-" | prepend:'#' | prepend: categories_path }}-ref" {{ not_empty }}{% endcapture %}
       {% endif %}
       <a {{ more }}  title="{{ name }}">{{ name }}{{ size }}</a>
     </li>
@@ -63,7 +63,7 @@
                {% assign not_empty = "class='not_empty'" %}
              {%endif%}
              {% if size or categories_path == "" %}
-               {% capture more %}href="{{ categories_path | append:'#' | append:name | replace:" ","-" | replace:"/","-" }}-ref" {{ not_empty }} {% endcapture %}
+               {% capture more %}href="{{ name | replace:" ","-" | replace:"/","-" | prepend:'#' | prepend: categories_path }}-ref" {{ not_empty }} {% endcapture %}
              {%endif%}
 
              <a {{ more }} title="{{ name }}">{{ name }}{{ size }}</a>
@@ -92,7 +92,7 @@
                    {% assign not_empty = "class='not_empty'" %}
                  {%endif%}
                  {% if size or categories_path == "" %}
-                   {% capture more %}href="{{ categories_path | append:'#' | append:name | replace:" ","-" | replace:"/","-" }}-ref" {{ not_empty }} {% endcapture %}
+                   {% capture more %}href="{{ name | replace:" ","-" | replace:"/","-" | prepend:'#' | prepend: categories_path }}-ref" {{ not_empty }} {% endcapture %}
                  {%endif%}
 
                  <a {{ more }} title="{{ name }}">{{ name }}{{ size }}</a>
@@ -113,7 +113,7 @@
                       {% assign not_empty = "class='not_empty'" %}
                     {%endif%}
                     {% if size or categories_path == "" %}
-                      {% capture more %}href="{{ categories_path | append:'#' | append:name | replace:" ","-" | replace:"/","-" }}-ref" {{ not_empty }} {% endcapture %}
+                      {% capture more %}href="{{ name | replace:" ","-" | replace:"/","-" | prepend:'#' | prepend: categories_path }}-ref" {{ not_empty }} {% endcapture %}
                     {%endif%}
 
                     <li><i class="icon-fixed-width icon-{{ icon_close }} {{ not_collapsable }}"></i><a {{ more }} title="{{ name }}">{{ name }}{{ size }}</a></li>
@@ -161,7 +161,7 @@
             {% assign not_empty = "class='not_empty'" %}
           {% endif %}
           {% if size or categories_path == "" %}
-            {% capture more %}href="{{ categories_path | append:'#' | append:name | replace:" ","-" }}-ref" {{ not_empty }} {% endcapture %}
+            {% capture more %}href="{{ name | replace:" ","-" | prepend:'#' | prepend: categories_path }}-ref" {{ not_empty }} {% endcapture %}
           {%endif%}
 
           <a {{ more }} title="{{ name }}">{{ name }}{{ size }}</a>
