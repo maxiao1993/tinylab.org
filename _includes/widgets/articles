@@ -5,12 +5,41 @@
 
 <article>
   <header>
+
     <h2>
         <a class="tooltip article" href="{{ article.url }}">{% if article.desc %}<span>{{ article.desc }}</span>{% endif %}{{ article.title }}</a>
     </h2>
+
+    <time>{{ article.date | date: "%m-%d<br/>%Y" }}</time>
+
     {% if article.group %}{% assign group = article.group %}{% else %}{% assign group = "original" %}{% endif %}
     {% assign group_name = site.data.groups[group] %}
-    <group><a href="{{ BASE_PATH }}{{ site.JB.groups_path }}#{{ group_name | replace: ' ','-' }}-ref">{{ group_name }}</a></group>
+
+    <group>
+
+     <i class="icon-fixed-width icon-direction"></i>
+     <a href="{{ BASE_PATH }}{{ site.JB.groups_path }}#{{ group_name | replace: ' ','-' }}-ref" title="查看所有 {{group_name}} 文章">{{ group_name }}</a>
+
+    {% assign cnt = 0 %}
+    {% for category in article.categories %}
+      {% assign cnt = cnt | plus:1 %}
+      {% if cnt == 1 %}
+        <i class="icon-fixed-width icon-folder-open"></i>
+      {% endif %}
+      {% if cnt > site.JB.article.categories_limit %}
+        {% break %}
+      {% endif %}
+     {% assign downcase_name = category | downcase %}
+      <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category | replace: ' ','-' | replace:'/','-' }}-ref" title="查看所有 {{category}} 文章">{{ category }} <sup>({{ site.categories[downcase_name].size}})</sup></a>
+    {% endfor %}
+
+    {% if article.album %}
+     <i class="icon-fixed-width icon-coffee"></i>
+     <a href="{{ BASE_PATH }}{{ site.JB.albums_path }}#{{ article.album | replace: ' ','-' | replace:'/','-' }}-ref" title="查看该专辑所有文章">{{ article.album }}</a>
+    {% endif %}
+
+    </group>
+
   </header>
 </article>
 {% endfor %}

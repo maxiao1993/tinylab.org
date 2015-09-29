@@ -60,6 +60,8 @@ JB :
     items_limit: 5
   author_box:
     max_oneline: 4
+  article:
+    categories_limit: 3
 
   code_prettify:
     theme: doxy
