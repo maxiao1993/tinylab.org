@@ -81,7 +81,7 @@
         - name: 网络管理
         - name: 多媒体管理
         - name: 电源管理
-          categorires:
+          categories:
             - name: System Suspend
             - name: CPUIdle
             - name: DVFS
@@ -112,7 +112,7 @@
         - name: Ubuntu
         - name: 在线 Linux
 
-- name: 嵌入式 Linux 开发
+- name: Linux 开发
   categories:
     - name: 硬件体系架构
       categories:

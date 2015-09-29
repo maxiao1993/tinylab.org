@@ -17,7 +17,7 @@ tags:
   - ISA
 categories:
   - Denver
-  - 技术动向
+  - 技术动态
 ---
 
 <!-- title: 大开脑洞：当丹佛核心遇上超线程 -->

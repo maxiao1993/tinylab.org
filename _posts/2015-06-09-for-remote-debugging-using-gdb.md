@@ -5,11 +5,10 @@ layout: post
 permalink: /for-remote-debugging-using-gdb/
 tags:
   - 远程调试
-  - gdb
   - gdbserver
   - Linux
 categories:
-  - 调试工具
+  - GDB
 ---
 
 > By Falcon of [TinyLab.org][1]
