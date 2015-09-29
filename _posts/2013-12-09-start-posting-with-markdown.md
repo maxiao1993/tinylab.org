@@ -8,7 +8,6 @@ tags:
   - markdown on save
   - retext
   - Tools
-  - wordpress
 categories:
   - Markdown
 ---

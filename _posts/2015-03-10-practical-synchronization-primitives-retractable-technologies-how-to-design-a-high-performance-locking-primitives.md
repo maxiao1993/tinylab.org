@@ -15,7 +15,7 @@ tags:
   - 临界区
   - 伸缩性
 categories:
-  - 进程同步
+  - 内核同步
 ---
 
 > 原文：[Scalability Techniques for Practical Synchronization Primitives][1]

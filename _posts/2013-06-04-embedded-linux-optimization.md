@@ -16,14 +16,7 @@ tags:
   - 启动速度优化
   - 嵌入式系统优化
 categories:
-  - Boot Time
-  - Debug, Trace and Profile
-  - Linux
-  - Memory Management
-  - Power Management
-  - Reliability, Availability, Serviceability
-  - System Size
-  - Testing
+  - 系统优化
 ---
 
 > by falcon of TinyLab.org

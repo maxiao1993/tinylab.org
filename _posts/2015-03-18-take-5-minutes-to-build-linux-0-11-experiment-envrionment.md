@@ -15,7 +15,7 @@ tags:
   - 实验环境
 categories:
   - Linux 0.11
-  - 开源项目
+  - Linux 0.11 Lab
 ---
 
 > by Falcon of [TinyLab.org][1]

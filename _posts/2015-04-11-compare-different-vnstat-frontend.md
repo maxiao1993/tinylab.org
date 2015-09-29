@@ -11,7 +11,7 @@ tags:
   - Web
   - 前端
 categories:
-  - 开源项目
+  - vnStatSVG
   - 流量监控
 ---
 

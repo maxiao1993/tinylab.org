@@ -1,5 +1,5 @@
 ---
-title: 'Use tables in Pandoc&#8217;s Markdown'
+title: "Use tables in Pandoc's Markdown"
 author: Wu Zhangjin
 layout: post
 album: Markdown 用法详解

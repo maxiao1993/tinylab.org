@@ -132,7 +132,7 @@
     {% endfor %}
 
    <!-- 其他分类 -->
-   {% assign name = "其他分类" %}
+   {% assign name = "未经分类" %}
    {% assign ctg_id = "ctg-xxxx" %}
    {% assign more = "" %}
    <li id="{{ ctg_id }}">
