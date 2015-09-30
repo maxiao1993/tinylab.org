@@ -540,7 +540,7 @@ article header group {
     line-height: .98em
 }
 article header group a {
-    color: #6a8
+    color: #3a8
 }
 article header group i {
     font-size: 80%;
@@ -566,10 +566,6 @@ article header time {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-
-    opacity: 0.65;
-    -ms-filter: "alpha(opacity=65)"; /* IE 8 */
-    filter: alpha(opacity=65);       /* IE 4-7 */
 }
 
 article header span a:hover {
