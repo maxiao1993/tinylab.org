@@ -20,13 +20,18 @@
      <i class="icon-fixed-width icon-direction"></i>
      <a href="{{ BASE_PATH }}{{ site.JB.groups_path }}#{{ group_name | replace: ' ','-' }}-ref" title="查看所有 {{group_name}} 文章">{{ group_name }}</a>
 
+    {% assign categories_limit = site.JB.article.categories_limit %}
+    {% if article.album %}
+      {% assign categories_limit = site.JB.article.categories_limit | minus: 1 %}
+    {% endif %}
+
     {% assign cnt = 0 %}
     {% for category in article.categories %}
       {% assign cnt = cnt | plus:1 %}
       {% if cnt == 1 %}
         <i class="icon-fixed-width icon-folder-open"></i>
       {% endif %}
-      {% if cnt > site.JB.article.categories_limit %}
+      {% if cnt > categories_limit %}
         {% break %}
       {% endif %}
      {% assign downcase_name = category | downcase %}
