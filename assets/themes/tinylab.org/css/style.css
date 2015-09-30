@@ -1051,11 +1051,11 @@ short_prev_next {
     font-size: 2em
 }
 #float-box {
-    display: none;
+    display: block;
 }
 #float-box-button {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
-    display: block
+    display: none
 }
 
 #float-box-wrap a:hover {
@@ -1162,7 +1162,7 @@ short_prev_next {
     #float-box-wrap .invisible {
         display: none
     }
-    #show-float-box,
+    #float-box-button,
     short_prev_next,
     #toc-container {
         display: block
