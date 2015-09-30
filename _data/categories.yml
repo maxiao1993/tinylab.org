@@ -164,6 +164,7 @@
             - name: KGDB
             - name: Ftrace
             - name: Perf
+            - name: Oprofile
             - name: Gprof
             - name: Gcov
             - name: Valgrind
