@@ -21,14 +21,12 @@ categories:
 这里收集各类可以直接在线访问的 Linux 系统，方便初学者快速体验：
 
 1. 运行在 Javascript 模拟器上的 Linux
-
   * [JsLinux][3]: 由 Qemu 作者 Fabrice Bellard 原创
   * [jor1k][8]: OpenRISC OR1K CPU emulator.
   * [v86][9]: PC emulator.
   * [angel][10]: RISC-V CPU emulator.
 
 2. 其他
-
   * [Linux 实验楼](https://www.shiyanlou.com/)
   * [Linuxzoo: Learn Linux from the safety of your chair using a remote private linux machine with root access][4]
 
