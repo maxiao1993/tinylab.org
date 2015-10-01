@@ -540,7 +540,7 @@ article header group {
     line-height: .98em
 }
 article header group a {
-    color: #3a8
+    color: #ccf
 }
 article header group i {
     font-size: 80%;
@@ -554,6 +554,7 @@ article header group sup {
     top: -.5em
 }
 article header time {
+    color: #ccc;
     overflow: visible;
     text-align: center;
     line-height: 135%;
