@@ -488,8 +488,8 @@ article section h2,
 article section h3,
 article section h4,
 article section h5 {
-    margin-top: 1.8em;
-    margin-bottom: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
     color: #333;
     font-weight: 500
 }
