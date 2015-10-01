@@ -64,7 +64,7 @@ JB :
     categories_limit: 3
 
   code_prettify:
-    theme: doxy
+    theme: prettify
 
   comments :
     provider : duoshuo
