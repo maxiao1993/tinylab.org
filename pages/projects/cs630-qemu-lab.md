@@ -1,10 +1,17 @@
 ---
-title: 'CS630-Qemu-Lab: Qemu 上学汇编语言课'
+title: 'CS630 Qemu 实验环境'
+tagline: '通过 Qemu 学习旧金山大学的 CS630 汇编语言课程'
 author: Wu Zhangjin
 layout: page
 permalink: /cs630-qemu-lab/
-views:
-  - 282
+description: 通过 Qemu 学习旧金山大学的汇编语言课程 CS630。
+update: 2015-10-1
+categories:
+  - 开源项目
+  - 汇编
+  - Qemu
+tags:
+  - CS630
 ---
 
 ## 简介

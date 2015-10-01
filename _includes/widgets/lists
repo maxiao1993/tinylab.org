@@ -12,8 +12,14 @@
   {% assign total_num = 0 %}
   {% for item in list %}
     {% if condition %}
-      {% if item[{{condition}}] != {{value}} %}
-        {% continue %}
+      {% if condition == 'path' %}
+        {% unless item[{{condition}}] contains {{value}} %}
+          {% continue %}
+        {%endunless%}
+      {% else %}
+        {% if item[{{condition}}] != {{value}} %}
+          {% continue %}
+        {% endif %}
       {% endif %}
     {% else %}
      {% if page.album and item.album and page.album == item.album %}
@@ -42,10 +48,10 @@
     {% endif %}
     {% assign total_num =  total_num | plus:1 %}
     <li>
-       <a rel="nofollow" class="tooltip list" href="{{ item.url }}" target="_blank" {% if tooltip == false %}title="{{ item.title }}"{%endif%}>{% if truncate %}{{ item.title | truncate: site.JB.posts.title_length }}{% else %}{{ item.title }}{% endif %}
+       <a rel="nofollow" class="tooltip list" href="{{ item.permalink }}" target="_blank" {% if tooltip == false %}title="{{ item.title }}"{%endif%}>{% if truncate %}{{ item.title | truncate: site.JB.posts.title_length }}{% else %}{{ item.title }}{% endif %}
         {% if tooltip %}
         <span>
-          {{ item.desc }}
+          {{ item.description }}
         </span>
         {% endif %}
        </a>

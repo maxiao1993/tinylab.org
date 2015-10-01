@@ -1,6 +1,15 @@
 {% for article in articles %}
-{% if condition and article[{{condition}}] != {{value}} %}
-    {% continue %}
+
+{% if condition %}
+  {% if condition != 'path' %}
+    {% if article[{{condition}}] != {{value}} %}
+      {% continue %}
+    {% endif %}
+  {% else %}
+    {% unless article[{{condition}}] contains {{value}} %}
+      {% continue %}
+    {%endunless%}
+  {% endif %}
 {% endif %}
 
 <article>
@@ -10,7 +19,17 @@
         <a class="tooltip article" href="{{ article.url }}">{% if article.desc %}<span>{{ article.desc }}</span>{% endif %}{{ article.title }}</a>
     </h2>
 
-    <time>{{ article.date | date: "%m-%d<br/>%Y" }}</time>
+    {% assign article_date = nil %}
+    {% if article.date %}
+       {% assign article_date = article.date %}
+    {% else %}
+       {% if article.update %}
+         {% assign article_date = article.update %}
+       {% endif %}
+    {% endif %}
+    {% if article_date %}
+    <time>{{ article_date | date: "%m-%d<br/>%Y" }}</time>
+    {% endif %}
 
     {% if article.group %}{% assign group = article.group %}{% else %}{% assign group = "original" %}{% endif %}
     {% assign group_name = site.data.groups[group] %}
@@ -35,7 +54,7 @@
         {% break %}
       {% endif %}
      {% assign downcase_name = category | downcase %}
-      <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category | replace: ' ','-' | replace:'/','-' }}-ref" title="查看所有 {{category}} 文章">{{ category }} <sup>{{ site.categories[downcase_name].size}}</sup></a>
+      <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category | downcase | replace: ' ','-' | replace:'/','-' }}-ref" title="查看所有 {{category}} 文章">{{ category }} <sup>{{ site.categories[downcase_name].size}}</sup></a>
     {% endfor %}
 
     {% if article.album %}

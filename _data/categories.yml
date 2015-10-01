@@ -114,6 +114,7 @@
 
 - name: Linux 开发
   categories:
+    - name: Linux 综合知识
     - name: 硬件架构
       categories:
         - name: CPU
@@ -221,6 +222,7 @@
 
 - name: Android 开发
   categories:
+    - name: Android 综合知识
     - name: Android 基础
       categories:
         - name: Android 开发环境
