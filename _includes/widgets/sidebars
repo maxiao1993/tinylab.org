@@ -2,7 +2,7 @@
   {% if sidebar.disable %}
     {% continue %}
   {% endif %}
-   {% assign title = sidebar.name %}
+   {% assign title = sidebar.title %}
    {% assign icon = sidebar.icon %}
    {% assign tooltip = sidebar.tooltip %}
    {% assign prompt = title | prepend: "更多" %}

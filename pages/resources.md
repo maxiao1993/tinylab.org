@@ -5,6 +5,8 @@ tagline: 本站各类资源合集
 permalink: /resources/
 group: navigation
 plugin: tab
+categories:
+  - 关于我们
 tags:
   - 开源项目
   - 开放书籍
@@ -30,9 +32,31 @@ order: 100
     {% for item in res %}
     <div class='tab_content_item {% if item.title == res.first.title %}active{% endif %}'>
      <ul>
-     {% assign articles = site.data[item.data] %}
+     {% if site.data[item.data] != nil %}
+       {% assign articles = site.data[item.data] %}
+       {% assign condition = nil %}
+       {% assign value = "" %}
+     {% else %}
+       {% assign articles = site[item.src] %}
+       {% assign condition = item.condition %}
+       {% assign value = item.value %}
+     {% endif %}
+
      {% for article in articles %}
-       <li><a ref="bookmark" class="tooltip article" href="{{ article.url }}"><span>{% if article.desc %}{{ article.desc }}{% else %}{{ article.title }}{% endif %}</span>{{ article.title }}</a></li>
+
+        {% if condition %}
+          {% if condition != 'path' %}
+            {% if article[{{condition}}] != {{value}} %}
+              {% continue %}
+            {% endif %}
+          {% else %}
+            {% unless article[{{condition}}] contains {{value}} %}
+              {% continue %}
+            {%endunless%}
+          {% endif %}
+        {% endif %}
+
+       <li><a ref="bookmark" class="tooltip article" href="{{ article.permalink }}"><span>{% if article.description %}{{ article.description }}{% else %}{{ article.title }}{% endif %}</span>{{ article.title }}</a></li>
      {% endfor %}
      </ul>
     </div>
