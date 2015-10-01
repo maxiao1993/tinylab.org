@@ -53,6 +53,8 @@ Markdown 基本用法请参考 [Markdown 语法说明][2] 以及上面创建的�
 
     $ ln tools/post tools/falcon.post
 
+把 `falcon` 替换为你自己的昵称即可。
+
 ### 编译文稿
 
     $ jekyll s --limit_posts 1
