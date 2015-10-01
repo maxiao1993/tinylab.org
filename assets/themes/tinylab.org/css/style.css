@@ -932,12 +932,14 @@ short_prev_next {
     opacity: .9
 }
 .tag-box a {
+    font-size: 85%;
     padding: 4px 6px;
     margin: 2px;
     background: #eee;
     color: #555;
     border-radius: 3px;
     text-decoration: none;
+    text-transform: capitalize;
     border: 1px dashed #ccc
 }
 .tag-box a span {
