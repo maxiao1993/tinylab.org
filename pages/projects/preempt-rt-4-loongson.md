@@ -3,10 +3,9 @@ title: Preempt-RT：龙芯/MIPS 实时抢占 Linux
 author: Wu Zhangjin
 layout: page
 permalink: /preempt-rt-4-loongson/
-views:
-  - 20
 ---
-【注】因该项目的原主页已无法访问，这里将作为龙芯/MIPS 版实时抢占 Linux 的临时主页。
+
+因该项目的原主页已无法访问，这里将作为龙芯/MIPS 版实时抢占 Linux 的临时主页。
 
 ## 代码仓库
 

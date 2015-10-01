@@ -3,15 +3,11 @@ title: 'Linux-Loongson: 社区版龙芯 Linux'
 author: Wu Zhangjin
 layout: page
 permalink: /linux-loongson-community/
-views:
-  - 61
 ---
-【注】因该项目的原主页已无法访问，这里将作为社区版龙芯 Linux 的临时主页。
-
-
-# Linux-Loongson-Community (社区版龙芯Linux)
 
 The Linux Kernel For Loongson Maintained by Community.
+
+因该项目的原主页已无法访问，这里将作为社区版龙芯 Linux 的临时主页。
 
 ## Introduction (项目简介)
 
