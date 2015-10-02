@@ -92,7 +92,7 @@ comments: false
 
 <h2 id="其他分类-ref">其他分类</h2>
 
-{% assign p_ctg_list = p_ctg_list | plit:"," %}
+{% assign p_ctg_list = p_ctg_list | split:"," %}
 {% for category in site.categories %}
   {% assign name = category[0] %}
   {% if p_ctg_list contains name %}

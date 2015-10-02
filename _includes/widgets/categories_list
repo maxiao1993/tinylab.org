@@ -142,7 +142,7 @@
    </li>
    <ul id="{{ ctg_id }}-cld" class="nav">
 
-    {% assign p_ctg_list = p_ctg_list | downcase | plit:"," %}
+    {% assign p_ctg_list = p_ctg_list | downcase | split:"," %}
 
     {% for category in site.categories %}
       {% assign name = category[0] %}
