@@ -34,7 +34,12 @@
     <text class="anc0 fnt0" x="{{ x_width | plus:30 }}" y="{{ x_label_pos }}">{{ x_label }}</text>
     <text class="anc1 fnt0" x="{{ x_base }}" y="{{ y_label_pos }}">{{ y_label }}</text>
 
+    {% assign cnt = 1 %}
     {% for item in list %}
+      {% if cnt > x_total %}
+        {% break %}
+      {% endif %}
+      {% assign cnt = cnt | plus: 1 %}
       {% assign i = item | split:',' %}
       {% assign title = i[0] %}
       {% assign size = i[1] | plus:0 %}
