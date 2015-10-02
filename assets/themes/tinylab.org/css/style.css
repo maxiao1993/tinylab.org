@@ -230,6 +230,7 @@ textarea {
 /*  General Settings  */
 
 body {
+    background: #000;
     font-family: 'Lucida Grande', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'WenQuanYi Micro Hei', sans-serif, 'SimSun', "宋体", 'Heiti', "黑体";
     font-size: 13.34px;
     *font-size: small;
@@ -303,7 +304,7 @@ a:active {
 
 #top-wrap {
     width: 100%;
-    background: #dcdee0;
+    background: #345;
     overflow: hidden;
     height: 40px;
     margin: 0 auto
@@ -353,16 +354,16 @@ a:active {
     font-size: 115%
 }
 #navbar ul li a {
-    color: #53585f;
+    color: #888;
     padding: 5px
 }
 #navbar ul li.active a,
 #navbar ul li a:hover {
-    color: #53585f;
+    color: #eee;
     text-decoration: none;
     padding: 5px;
 
-    border-bottom: 1px solid #53585f
+    border-bottom: 1px solid #eee
 }
 
 #navbar #menu-icon {
@@ -451,6 +452,7 @@ a:active {
     -moz-box-shadow: 2px 2px 12px #787878;
     -webkit-box-shadow: 2px 2px 12px #787878;
     box-shadow: 2px 2px 12px #787878;
+    border-radius: 5px;
 }
 #content {
     margin-bottom: 35px
@@ -765,34 +767,34 @@ pre code {
     float: left
 }
 #query {
-    background: #eef;
+    background: #357;
     text-align: center;
     font-size: 100%;
     font-weight: 200;
     width: 150px;
     height: 28px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     float: left;
 }
 input::-webkit-input-placeholder {
     /* WebKit browsers */
 
-    color: #bbb
+    color: #ccc
 }
 input:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
 
-    color: #bbb
+    color: #ccc
 }
 input::-moz-placeholder {
     /* Mozilla Firefox 19+ */
 
-    color: #bbb
+    color: #ccc
 }
 input:-ms-input-placeholder {
     /* Internet Explorer 10+ */
 
-    color: #bbb
+    color: #ccc
 }
 /*  Pagination  */
 
