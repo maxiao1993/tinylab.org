@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'WuZhangjin'
+author: 'Wu Zhangjin'
 title: "固件和引导程序介绍"
 group: "translation"
 album: '嵌入式 Linux 知识库'
