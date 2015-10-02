@@ -7,6 +7,11 @@ comments: false
 ---
 {% include JB/setup %}
 
+{% assign x_label = '分类' %}
+{% assign y_label = '数目' %}
+
+{% assign list = nil %}
+
 {% assign p_ctg_list = "" %}
 {% for category in site.data.categories %}
   {% assign name = category.name %}
@@ -21,6 +26,13 @@ comments: false
     {% assign pages_list = categories %}
     {% include JB/pages_list %}
   </ul>
+   {% assign list0 = size | append:',' | append: name %}
+   {% if list == nil %}
+     {% assign list = list0 %}
+   {% else %}
+     {% assign list = list | append:';' | append: list0 %}
+   {% endif %}
+
   {% endif %}
 
   <!-- top -->
@@ -38,6 +50,13 @@ comments: false
           {% assign pages_list = child_categories %}
           {% include JB/pages_list %}
         </ul>
+       {% assign list0 = size | append:',' | append: name %}
+       {% if list == nil %}
+         {% assign list = list0 %}
+       {% else %}
+         {% assign list = list | append:';' | append: list0 %}
+       {% endif %}
+
       {% endif %}
 
       <!-- child -->
@@ -55,6 +74,13 @@ comments: false
                   {% assign pages_list = g_categories %}
                   {% include JB/pages_list %}
                 </ul>
+               {% assign list0 = size | append:',' | append: name %}
+               {% if list == nil %}
+                 {% assign list = list0 %}
+               {% else %}
+                 {% assign list = list | append:';' | append: list0 %}
+               {% endif %}
+
             {% endif %}
 
               <!-- g -->
@@ -74,6 +100,13 @@ comments: false
                         {% assign pages_list = gg_categories %}
                         {% include JB/pages_list %}
                       </ul>
+                       {% assign list0 = size | append:',' | append: name %}
+                       {% if list == nil %}
+                         {% assign list = list0 %}
+                       {% else %}
+                         {% assign list = list | append:';' | append: list0 %}
+                       {% endif %}
+
                     {% endif %}
 
                   {% endfor %}
@@ -99,9 +132,24 @@ comments: false
     {% continue %}
   {% endif %}
 
-  <h3 id="{{ name | downcase | replace:" ","-" | replace:"/","-" }}-ref">{{ name | join: "/" }} <sup>({{ category[1].size }})</sup></h3>
+  {% assign size = category[1].size %}
+  <h3 id="{{ name | downcase | replace:" ","-" | replace:"/","-" }}-ref">{{ name | join: "/" }} <sup>({{ size }})</sup></h3>
   <ul>
     {% assign pages_list = category[1] %}
     {% include JB/pages_list %}
   </ul>
+  {% if size %}
+   {% assign list0 = size | append:',' | append: name %}
+   {% if list == nil %}
+     {% assign list = list0 %}
+   {% else %}
+     {% assign list = list | append:';' | append: list0 %}
+   {% endif %}
+  {% endif %}
+
 {% endfor %}
+
+{% assign list = list | split:';' | sort | reverse | join:';' %}
+
+<h2 id="{{x_label}}统计-ref">{{ x_label}}统计 <sup>({{ site.posts.size }})</sup></h2>
+{% include widgets/svg_statistic %}

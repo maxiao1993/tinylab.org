@@ -5,7 +5,7 @@
 {% assign max = 0 %}
 {% for item in list %}
   {% assign i = item | split:',' %}
-  {% assign size = i[1] | plus: 0 %}
+  {% assign size = i[0] | plus: 0 %}
   {% if size > max %}
     {% assign max = size %}
   {% endif %}
@@ -21,7 +21,7 @@
     {% assign y_height = 200 %}
 
     {% assign x_total = 10 %}
-    {% assign x_step = x_width | divided_by: x_total %}
+    {% assign x_step = x_width | minus: x_base | divided_by: x_total %}
     {% assign x_rect_step = x_width | divided_by: x_total | divided_by: 2 %}
 
     {% assign y_end = y_base | minus: y_height %}
@@ -41,8 +41,8 @@
       {% endif %}
       {% assign cnt = cnt | plus: 1 %}
       {% assign i = item | split:',' %}
-      {% assign title = i[0] %}
-      {% assign size = i[1] | plus:0 %}
+      {% assign title = i[1] %}
+      {% assign size = i[0] | plus:0 %}
       {% assign cur_x_step = x_step | times: forloop.index0 %}
       {% assign x_pos = x_base | plus:cur_x_step %}
       {% assign x_offset = x_rect_step | divided_by: 2 %}

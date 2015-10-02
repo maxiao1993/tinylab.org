@@ -16,7 +16,7 @@ comments: false
 {% for post_author in posts_by_author %}
   {% assign author_name = post_author.name %}
 
-   {% assign list0 = author_name | append:',' | append: post_author.items.size %}
+   {% assign list0 = post_author.items.size | append:',' | append: author_name %}
    {% if list == nil %}
      {% assign list = list0 %}
    {% else %}
@@ -52,6 +52,8 @@ comments: false
     {% endfor %}
   </ul>
 {% endfor %}
+
+{% assign list = list | split:';' | join:';' %}
 
 <h3>{{ x_label}}{{ y_label}}统计 <sup>({{ site.posts.size }})</sup></h3>
 {% include widgets/svg_statistic %}

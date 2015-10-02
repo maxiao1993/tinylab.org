@@ -20,10 +20,11 @@ comments: false
    {% assign month = post.date | date: '%Y-%m' %}
    {% if oldmonth != month or post == site.posts.last %}
      {% if post == site.posts.last %}
+       {% assign oldmonth = month %}
        {% assign size = size | plus: 1 %}
      {% endif %}
      {% if size > 0 %}
-       {% assign list0 = oldmonth | append:',' | append: size %}
+       {% assign list0 = size | append:',' | append: oldmonth %}
      {% endif %}
      {% assign size = 1 %}
 

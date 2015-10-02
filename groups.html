@@ -20,7 +20,7 @@ comments: false
     {% assign group_name = site.data.groups[group.name] %}
   {% endif %}
 
-   {% assign list0 = group_name | append:',' | append: group.items.size %}
+   {% assign list0 = group.items.size | append:',' | append: group_name %}
    {% if list == nil %}
      {% assign list = list0 %}
    {% else %}
