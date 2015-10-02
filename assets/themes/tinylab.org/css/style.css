@@ -244,7 +244,7 @@ textarea {
 }
 strong,
 th {
-    font-weight: 500
+    font-weight: 600
 }
 em {
     font-style: italic
@@ -696,7 +696,7 @@ td {
     border: 1px solid #e5e5e5
 }
 th {
-    font-size: 116%
+    font-size: 100%
 }
 tbody tr:nth-child(odd) {
     background-color: #f2f2f2
