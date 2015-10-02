@@ -230,6 +230,7 @@ textarea {
 /*  General Settings  */
 
 body {
+    background: #ccf;
     font-family: 'Lucida Grande', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'WenQuanYi Micro Hei', sans-serif, 'SimSun', "宋体", 'Heiti', "黑体";
     font-size: 13.34px;
     *font-size: small;
@@ -303,7 +304,7 @@ a:active {
 
 #top-wrap {
     width: 100%;
-    background: #dcdee0;
+    background: #aaf;
     overflow: hidden;
     height: 40px;
     margin: 0 auto
