@@ -15,10 +15,6 @@
 <article>
   <header>
 
-    <h2>
-        <a class="tooltip article" href="{{ article.url }}">{% if article.desc %}<span>{{ article.desc }}</span>{% endif %}{{ article.title }}</a>
-    </h2>
-
     {% assign article_date = nil %}
     {% if article.date %}
        {% assign article_date = article.date %}
@@ -28,8 +24,12 @@
        {% endif %}
     {% endif %}
     {% if article_date %}
-    <time>{{ article_date | date: "%m-%d<br/>%Y" }}</time>
+    <time>{{ article_date | date: "%Y-%m-%d" }}</time>
     {% endif %}
+
+    <h2>
+        <a class="tooltip article" href="{{ article.url }}">{% if article.desc %}<span>{{ article.desc }}</span>{% endif %}{{ article.title }}</a>
+    </h2>
 
     {% if article.group %}{% assign group = article.group %}{% else %}{% assign group = "original" %}{% endif %}
     {% assign group_name = site.data.groups[group] %}

@@ -557,12 +557,13 @@ article header time {
     color: #ccc;
     overflow: visible;
     text-align: center;
-    line-height: 135%;
     font-size: 80%;
-    margin-top: -4.9em;
     float: right;
 
-    padding: 3px;
+    margin-top: 3px;
+    padding: 0;
+    padding-left: 3px;
+    padding-right: 3px;
     border: 1px dotted #dcdee0;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -603,11 +604,11 @@ article aside {
 
 article header h2,
 #home header h2 {
-    font-size: 105%;
     font-weight: 500;
+    font-size: 110%;
     width: 100%;
-    padding-top: 1.2em;
-    padding-bottom: 2.2em;
+    padding-top: 0.1em;
+    padding-bottom: 2.1em;
     border-bottom: 1px solid #efefef;
 
     overflow: hidden;
@@ -1133,11 +1134,6 @@ short_prev_next {
     }
     article header h1 {
         font-size: 120%;
-    }
-    article header h2,
-    #home header h2 {
-        font-size: 100%;
-        font-weight: 500
     }
     article header time {
         font-size: 60%;
