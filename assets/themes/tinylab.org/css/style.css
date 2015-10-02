@@ -617,6 +617,10 @@ article header h2,
     white-space: nowrap;
     text-overflow: ellipsis
 }
+article header h2 {
+    padding-top: 1.0em;
+    padding-bottom: 1.0em;
+}
 
 .post-extra {
     font-size: 100%;
