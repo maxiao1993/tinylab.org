@@ -533,6 +533,9 @@ article section ol li {
 section footer p {
     text-indent: 1.16em;
 }
+#wrap footer p {
+    color: #345
+}
 article header group {
     text-transform: capitalize;
     font-size: 90%;
@@ -1069,7 +1072,7 @@ short_prev_next {
 }
 
 #float-box-wrap a:hover {
-    color: #55f
+    color: #579
 }
 #bottom {
     margin-bottom: 5px
@@ -1164,6 +1167,9 @@ short_prev_next {
         margin: 0 auto;
         bottom: 0px;
     }
+    #float-box-wrap a {
+        color: #357
+    }
     .author-box-wrap {
         margin-left: 50px
     }
@@ -1198,12 +1204,12 @@ short_prev_next {
 
         margin: 0;
         margin-left: 40px;
-        padding-top: 7px;
+        padding-top: 8px;
         -webkit-tap-highlight-color:rgba(0,0,0,0);
     }
     #navbar #menu-icon i {
         font-size: 2em;
-        color: #3a8
+        color: #579
     }
     #navbar #menu-container {
         z-index: 99999999;
@@ -1213,7 +1219,7 @@ short_prev_next {
         right: 10px;
         margin-top: 15px;
 
-        background: #dcdee0;
+        background: #357;
         position: fixed;
 
         border-radius: 5px;
@@ -1236,14 +1242,14 @@ short_prev_next {
     #navbar ul li a {
         overflow: visible;
         width: 120px;
-        border-bottom: 1px solid #ccf;
+        border-bottom: 1px solid #888;
     }
     #navbar ul li.active a,
     #navbar ul li a:hover {
-        color: #53585f;
+        color: #eee;
         text-decoration: none;
 
-        border-bottom: 1px solid #53585f
+        border-bottom: 1px solid #eee
     }
     #navbar ul li a,
     #navbar ul li.active a,
