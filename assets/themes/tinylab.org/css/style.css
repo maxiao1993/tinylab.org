@@ -1228,9 +1228,9 @@ short_prev_next {
         padding: 15px;
     }
     #navbar ul li a {
+        color: #888;
         overflow: visible;
         width: 120px;
-        border-bottom: 1px solid #888;
     }
     #navbar ul li.active a,
     #navbar ul li a:hover {
