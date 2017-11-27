@@ -24,6 +24,10 @@ tags:
 该项目致力于快速构建一个基于 Qemu 的 Linux 内核开发环境。
 
   * 使用文档：[README.md][2]
+
+  * 在线实验
+      * [泰晓实验云台](http://tinylab.cloud:6080/labs/)
+
   * 在线演示
       * 命令行
           * [Linux 快速上手](http://showterm.io/6fb264246580281d372c6)
@@ -36,7 +40,9 @@ tags:
           * [Linux 基本用法](http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8)
           * [Linux 进阶用法](https://v.qq.com/x/page/y0543o6zlh5.html)
           * [Uboot 基本用法](https://v.qq.com/x/page/l0549rgi54e.html)
+
   * 代码仓库：[https://github.com/tinyclub/linux-lab.git][3]
+
   * 基本特性：
       * Qemu 支持的大量虚拟开发板，统统免费，免费，免费。
       * 基于 Docker，一键安装，几分钟内就可构建，节约生命，生命，生命。
@@ -49,6 +55,10 @@ tags:
       * 预编译有 initrd 和内核镜像文件，可以快速体验实验效果。
       * 可灵活配置和扩展支持更多架构、虚拟开发板和内核版本。
       * 未来计划支持 Android emulator，支持在线调试。。。
+
+  * 插件
+      * [RLK4.0](https://github.com/tinyclub/rlk4.0)：《奔跑吧Linux内核 4.0》一书课程实验
+      * [CSKY](https://github.com/tinyclub/csky)：中天微国产处理器 [C-SKY Linux](https://c-sky.github.io) 开发插件
 
 ## 相关文章
 

@@ -12,8 +12,6 @@ comments: false
 {% assign x_label = '分类' %}
 {% assign y_label = '数目' %}
 
-{% assign list = nil %}
-
 {% assign p_ctg_list = "" %}
 {% for category in site.data.categories %}
   {% assign name = category.name %}
@@ -28,12 +26,6 @@ comments: false
     {% assign pages_list = categories %}
     {% include JB/pages_list %}
   </ul>
-   {% assign list0 = size | append:',' | append: name %}
-   {% if list == nil %}
-     {% assign list = list0 %}
-   {% else %}
-     {% assign list = list | append:';' | append: list0 %}
-   {% endif %}
 
   {% endif %}
 
@@ -52,12 +44,6 @@ comments: false
           {% assign pages_list = child_categories %}
           {% include JB/pages_list %}
         </ul>
-       {% assign list0 = size | append:',' | append: name %}
-       {% if list == nil %}
-         {% assign list = list0 %}
-       {% else %}
-         {% assign list = list | append:';' | append: list0 %}
-       {% endif %}
 
       {% endif %}
 
@@ -76,12 +62,6 @@ comments: false
                   {% assign pages_list = g_categories %}
                   {% include JB/pages_list %}
                 </ul>
-               {% assign list0 = size | append:',' | append: name %}
-               {% if list == nil %}
-                 {% assign list = list0 %}
-               {% else %}
-                 {% assign list = list | append:';' | append: list0 %}
-               {% endif %}
 
             {% endif %}
 
@@ -102,12 +82,6 @@ comments: false
                         {% assign pages_list = gg_categories %}
                         {% include JB/pages_list %}
                       </ul>
-                       {% assign list0 = size | append:',' | append: name %}
-                       {% if list == nil %}
-                         {% assign list = list0 %}
-                       {% else %}
-                         {% assign list = list | append:';' | append: list0 %}
-                       {% endif %}
 
                     {% endif %}
 
@@ -125,33 +99,45 @@ comments: false
   {% endif %}
 {% endfor %}
 
-<h2 id="其他分类-ref">其他分类</h2>
+<h2 id="未经分类-ref">未经分类</h2>
 
 {% assign p_ctg_list = p_ctg_list | split:"," %}
 {% for category in site.categories %}
   {% assign name = category[0] %}
-  {% if p_ctg_list contains name %}
+  {% assign downcase_name = category[0] | downcase %}
+  {% if p_ctg_list contains downcase_name %}
     {% continue %}
   {% endif %}
 
   {% assign size = category[1].size %}
-  <h3 id="{{ name | downcase | replace:" ","-" | replace:"/","-" }}-ref">{{ name | join: "/" }} <sup>({{ size }})</sup></h3>
+  <h3 id="{{ downcase_name | replace:" ","-" | replace:"/","-" }}-ref">{{ name | join: "/" }} <sup>({{ size }})</sup></h3>
   <ul>
     {% assign pages_list = category[1] %}
     {% include JB/pages_list %}
   </ul>
-  {% if size %}
-   {% assign list0 = size | append:',' | append: name %}
+{% endfor %}
+
+{% assign list = nil %}
+{% assign item_max_length = 8 %}
+
+{% for category in site.categories %}
+
+   {% assign item_size = category[1].size %}
+   {% assign item_length = item_size | append:'' | size %}
+   {% assign item_zeros = item_max_length | minus: item_length %}
+   {% assign prefix_zeros = '' %}
+   {% for i in (1..item_zeros) %}
+     {% assign prefix_zeros = prefix_zeros | append:'0' %}
+   {% endfor %}
+   {% assign list0 = prefix_zeros | append: item_size | append:',' | append: category[0] %}
    {% if list == nil %}
      {% assign list = list0 %}
    {% else %}
      {% assign list = list | append:';' | append: list0 %}
    {% endif %}
-  {% endif %}
-
 {% endfor %}
 
-{% assign list = list | split:';' | sort | reverse | join:';' %}
+{% assign list = list | split:';' | sort | reverse %}
 
 <h2 id="{{x_label}}统计-ref">{{ x_label}}统计 <sup>({{ site.posts.size }})</sup></h2>
 {% include widgets/svg_statistic %}
